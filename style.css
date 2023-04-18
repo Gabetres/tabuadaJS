@@ -8,6 +8,7 @@
     --input-color: #7eccff;
     --button-color: #7eccff;
     --footer-bg: #f6f6f6;
+    --tabble-color:#b9f3ff;
 }
 
 .dark-mode:root {
@@ -20,12 +21,14 @@
     --input-color: #a37eff;
     --button-color: #af7eff;
     --footer-bg: #131129;
+    --tabble-color:#b79cff;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 120ms;
 }
 
 body,
@@ -36,6 +39,7 @@ html {
     overflow-x: hidden;
     background-color: var(--body-bg);
     color: var(--body-color);
+    
 }
 
 header {
@@ -49,7 +53,7 @@ header {
 
 }
 
-.text {
+.value {
     text-align: 20px;
     display: flex;
     align-items: center;
@@ -114,6 +118,7 @@ table {
     border-radius: 20px;
     font-size: 18px;
     box-shadow: 0px 0px 15px #0000007c;
+    color: var(--tabble-color);
 }
 
 footer{
